@@ -1,0 +1,10 @@
+---
+const { name = "Mary", number = "211012486", book = "新闻" } = Astro.props;
+---
+
+<div>
+    <h2>{name}</h2>
+    <p>{number}</p>
+    <p>{book}</p>
+    <slot />
+</div>

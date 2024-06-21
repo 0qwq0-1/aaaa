@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navigation from '../components/Nav.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="欢迎">
 	<main>
 		<svg
 			class="astro-a"
@@ -32,17 +33,14 @@ import Card from '../components/Card.astro';
 					<stop offset="1" stop-opacity="0.2"></stop>
 				</linearGradient>
 			</defs>
-            <a href="/">首页</a>
-		<a href="about/">关于</a>
-		<a href="abcd/">电子书</a>
-        <a href="notes/">astro知识点</a>
+		<Navigation/>
 		</svg>
 		<h1>大家<span class="text-gradient">早上好</span></h1>
 		<p class="instructions">
 			今天不好 <code>那就</code> 明天好。<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
-		<p>p211012486 陈紫依</p>
+		<p>好天气</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://www.uokon.com/life/confident-the-definitive.html"
