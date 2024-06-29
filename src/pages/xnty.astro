@@ -1,0 +1,167 @@
+---
+import Stucard from "../components/Stucard.astro";
+---
+
+<meta charset="UTF-8" />
+<nav>
+    <a href="/">首页</a>
+    <a href="wlsgj/">历史时光机</a>
+    <a href="wlts/">未来探索</a>
+    <a href="kjjh/">科技交汇</a>
+    <a href="xnty/">虚拟体验</a>
+</nav>
+    <div class="banner">
+        <img
+            src="https://file.moyublog.com/d/file/2021-08-26/a165f7ef7d4b2b0b434423285d37c572.jpg"
+            alt="网站Banner"
+        />
+    </div>
+
+<h1>
+    虚拟体验
+</h1>
+<Stucard name="虚拟现实" major="VR">
+    <table>
+        <thead>
+            <tr>
+                <th>特点</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>沉浸式体验</td>
+                <td
+                    >通过头戴式显示器等设备，用户完全沉浸在虚拟环境中，获得身临其境的感觉。</td
+                >
+            </tr>
+            <tr>
+                <td>交互性</td>
+                <td
+                    >用户可以通过手柄、手势识别或语音控制等方式与虚拟环境进行实时交互。</td
+                >
+            </tr>
+            <tr>
+                <td>多感官体验</td>
+                <td>除了视觉，还包括听觉、触觉等多感官的体验，增强真实感。</td>
+            </tr>
+            <tr>
+                <td>创新应用</td>
+                <td>在教育、医疗、娱乐等多个领域有广泛的应用前景。</td>
+            </tr>
+            <tr>
+                <td>可扩展性</td>
+                <td
+                    >随着技术的发展，可以通过增加硬件设备和改进算法来进一步改善体验。</td
+                >
+            </tr>
+        </tbody>
+    </table>
+</Stucard>
+<Stucard name="增强现实" major="AR">
+    <table>
+        <thead>
+            <tr>
+                <th>特点</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>虚实结合</td>
+                <td
+                    >将虚拟信息（如图像、文字、视频等）叠加到真实环境中，增强用户的感知。</td
+                >
+            </tr>
+            <tr>
+                <td>实时交互</td>
+                <td>用户可以通过手势、声音等方式与虚拟信息进行实时交互。</td>
+            </tr>
+            <tr>
+                <td>便捷性</td>
+                <td
+                    >通常通过智能手机或平板电脑等移动设备实现，无需额外购买专业设备。</td
+                >
+            </tr>
+            <tr>
+                <td>实用性</td>
+                <td>在教育、旅游、购物等领域具有广泛的应用前景。</td>
+            </tr>
+        </tbody>
+    </table>
+</Stucard>
+<Stucard name="混合现实" major="MA">
+    <table>
+        <thead>
+            <tr>
+                <th>特点</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>融合性</td>
+                <td
+                    >将真实世界和虚拟世界的信息进行融合，创造出一种全新的环境体验。</td
+                >
+            </tr>
+            <tr>
+                <td>实时交互</td>
+                <td>用户可以与混合现实环境中的物体和场景进行实时交互。</td>
+            </tr>
+            <tr>
+                <td>高度自定义</td>
+                <td
+                    >用户可以根据自己的需求定制混合现实环境，满足不同场景下的需求。</td
+                >
+            </tr>
+            <tr>
+                <td>创新性</td>
+                <td>为创意设计和创新实践提供了新的可能性。</td>
+            </tr>
+        </tbody>
+    </table>
+</Stucard>
+<style>
+    html {
+        font-family: system-ui, sans-serif;
+        background: linear-gradient(to bottom, #d8fffb, #a0edec);
+        background-size: 224px;
+    }
+    a {
+        color: rgb(252, 252, 252);
+        text-decoration: none;
+        margin: right 3em;
+    }
+    nav {
+        background-color: rgb(103, 247, 247);
+        height: 3em;
+        line-height: 3em;
+        padding: 0 2em;
+        border-radius: 3em;
+        text-align: center;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+
+        margin: auto;
+    }
+    h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+        color:rgb(4, 75, 97)
+	}
+    h1{
+        font-family: 楷体;
+    }
+    .banner img {
+			max-width: 100%;
+			height: auto;
+		}
+</style>

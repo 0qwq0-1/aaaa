@@ -5,8 +5,9 @@ import Navigation from "../components/Nav.astro";
 ---
 
 <meta charset="UTF-8" />
-<Layout title="时空漫游">
+<Layout title="Welcome to Astro.">
 	<main>
+		<Navigation />
 		<svg
 			class="astro-a"
 			width="495"
@@ -33,47 +34,62 @@ import Navigation from "../components/Nav.astro";
 					<stop stop-opacity="0.9"></stop>
 					<stop offset="1" stop-opacity="0.2"></stop>
 				</linearGradient>
+				<template>
+					<div class="banner">
+						<img
+							src="https://p1.ssl.qhimg.com/t01c14ac8cd231161ea.jpg"
+							alt="网站Banner"
+						/>
+					</div>
+				</template>
 			</defs>
 		</svg>
-		<Navigation />
-		<h1><span class="text-gradient">时空漫游</span></h1>
-		<h1><span class="text-gradient">历史与未来的奇妙旅程</span></h1>
+		<h1><span class="text-gradient">历史时光机</span></h1>
 		<p class="instructions">
-			通过这个网站，用户可以<code>时空漫游</code> 了解历史的教训和未来的机遇<br
+			在<code>“时空漫游：未来于历史的奇妙旅程”</code
+			>中，我们特别为您打造了<strong>“历史时光机”</strong
+			>这一独特体验区。这里，您可以穿越时空，回到过去，亲身感受那些激动人心的历史瞬间。<br
 			/>
-			同时也能够感受到和创新的力量<strong>科技</strong> 和<strong
-				>创新</strong
-			>的力量
 		</p>
-		<ul role="list" class="link-card-grid">
-			<Card 
-				href="/wlsgj"
-				title="历史时光机"
-				body="回顾历史上的重要事件、人物和时代，通过丰富的图文和多媒体内容让历史栩栩如生。"
-				imageUrl="https://img95.699pic.com/photo/50273/6383.jpg_wh860.jpg"
+		<h2>  
+			<li><a href="/md/3">历史大事件→</a></li> 
+		</h2>
+		<div class="text-with-image">
+			<p>
+				走进历史大事件精选区，您将看到一幅幅波澜壮阔的历史画卷。从古代的罗马帝国的崛起，到中世纪的十字军东征；从工业革命的浪潮，到世界大战的硝烟弥漫……每一次历史的重大转折，都将在这里得到精彩呈现。
+			</p>
+			<img class="aa"
+				src="https://pic.vjshi.com/2017-07-26/458c704b60a7a02888594f95dc518301/00002.jpg?x-oss-process=style/watermark"
+				alt="历史事件"
 			/>
-			<Card
-				href="/wlts"
-				title="未来世界探秘"
-				body="探索科技、社会、环境等领域的未来趋势和预测，激发对未来世界的想象和思考。"
-				imageUrl="https://tse2-mm.cn.bing.net/th/id/OIP-C.q036-Zym6kWu68daSVmOpAAAAA?rs=1&pid=ImgDetMain"
+		</div>
+		<h2>  
+			<li><a href="/html/1.html">文化遗产探索→</a></li> 
+		</h2>
+		<div class="text-with-image">
+			<p>
+				文化遗产探索是连接现代人与过去历史的桥梁，它带领我们穿越时空，探寻那些历经岁月洗礼、仍然熠熠生辉的瑰宝。在这个探索过程中，我们不仅能够领略到世界各地历史遗迹、建筑、艺术和文化现象的独特魅力，还能深入了解它们背后的历史背景、文化内涵和时代价值。
+			</p>
+			<img class="aa"
+				src="https://ts1.cn.mm.bing.net/th/id/R-C.1f08608f135463e3b18a43726716024b?rik=w9Kd9IT6h71Eqg&riu=http%3a%2f%2fhimg2.huanqiu.com%2fattachment2010%2f2017%2f0609%2f16%2f09%2f20170609040943264.jpg&ehk=LrOLoOb2EpIbLCVdQFxKIzLdN7jJM8cRM%2fotShQWevM%3d&risl=&pid=ImgRaw&r=0"
+				alt="历史事件"
 			/>
-			<Card
-				href="/kjjh"
-				title="历史与科技的交汇"
-				body="介绍历史上的科技发明和创新，以及它们如何影响和改变了人类的生活。"
-				imageUrl="https://so1.360tres.com/t01ce556fdb7ec8a3f3.jpg"
-				
+		</div>
+		<h2>  
+			<li><a href="/html/2.html">历史人物传记→</a></li> 
+		</h2>
+		<div class="text-with-image">
+			<p>
+				展示历史上著名人物的生平事迹、成就和对后世的影响。
+			</p>
+			<img class="aa"
+				src="https://pic2.zhimg.com/v2-42df2d84d23b5bea7418d550acd3185e_720w.jpg?source=172ae18b"
+				alt="历史人物"
 			/>
-			<Card
-				href="/xnty"
-				title="虚拟历史体验"
-				body="通过虚拟现实技术，让用户身临其境地体验历史场景和事件，增加互动性和趣味性。"
-				imageUrl="https://ts1.cn.mm.bing.net/th/id/R-C.cba57ec759312888bace419cb55d45ba?rik=uNczPPKhEwQPVQ&riu=http%3a%2f%2fwww.fly-tech.com.cn%2fuploads%2fallimg%2f190829%2f1434514248-5.jpg&ehk=ruRJ8APZUO6UmUF74h6DGtpga3Nth8QroBrmS8lLHmo%3d&risl=&pid=ImgRaw&r=0"
-			/>
-		</ul>
+		</div>
 	</main>
 </Layout>
+
 <style>
 	main {
 		margin: auto;
@@ -100,26 +116,38 @@ import Navigation from "../components/Nav.astro";
 		text-align: center;
 		margin-bottom: 1em;
 	}
+	h2 {
+		color: black;
+		font-family: 35xp;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+		font-style: 楷体;
+	}
 	.text-gradient {
 		background-image: linear-gradient(
-			rgba(243, 194, 21, 0.99),
-			rgba(223, 223, 42, 0.66)
+			rgba(255, 201, 5, 0.66),
+			rgba(36, 35, 14, 0.33)
 		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
+		font-size: 40px;
+		font-family: 楷体, sans-serif;
 	}
 	.instructions {
 		margin-bottom: 2rem;
-		border: 1px solid rgba(243, 238, 238, 0.25);
+		border: 1px solid rgba(var(--accent-light), 25%);
 		background: linear-gradient(
-			rgba(234, 193, 48, 0.66),
+			rgba(224, 196, 94, 0.66),
 			rgba(250, 245, 102, 0.33)
 		);
-		color:black;
-		padding: 2rem;
+		padding: 1.5rem;
 		border-radius: 8px;
+		color: black;
+		font-family: 宋体;
 	}
 	.instructions code {
 		font-size: 1em;
@@ -130,18 +158,29 @@ import Navigation from "../components/Nav.astro";
 		);
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
+		color: #ba7a03;
 	}
 	.instructions strong {
-		color: #f0aa27;;
+		color: #ba7a03;
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+	p {
+		color: black;
 	}
-	code {  
-            color: #f0aa27;
-        }  
-
+	.banner img {
+		max-width: 100%;
+		height: auto;
+	}
+	.text-with-image {
+		display: flex;
+		align-items: flex-start; 
+	}
+	.text-with-image img {
+		margin-left: 10px; 
+		max-width: 50%; 
+		height: auto; 
+	}
+	a{
+		text-decoration: none;
+		color: #ba7a03;
+	}
 </style>

@@ -1,10 +1,15 @@
----
-const { name = "Mary", number = "211012486", book = "新闻" } = Astro.props;
----
-
-<div>
-    <h2>{name}</h2>
-    <p>{number}</p>
-    <p>{book}</p>
-    <slot />
+---  
+const { name = "Mary", major = "新闻"} = Astro.props;  
+---  
+  
+<div>  
+    <h2>{name}</h2>  
+    <p>{major}</p>  
+    <slot />  
 </div>
+<style>
+    h2,
+    p{
+        text-align: center;
+    }
+</style>

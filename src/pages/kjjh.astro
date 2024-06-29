@@ -1,9 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Navigation from '../components/Nav.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navigation from "../components/Nav.astro";
 ---
 
+<Navigation />
+<meta charset="UTF-8" />
 <Layout title="Welcome to Astro.">
 	<main>
 		<svg
@@ -32,15 +34,48 @@ import Navigation from '../components/Nav.astro';
 					<stop stop-opacity="0.9"></stop>
 					<stop offset="1" stop-opacity="0.2"></stop>
 				</linearGradient>
+				<template>
+					<div class="banner">
+						<img
+							src="https://img.zcool.cn/community/0166475b84fb6ca8012190f2d3377c.jpg@1280w_1l_2o_100sh.jpg"
+							alt="网站Banner"
+						/>
+					</div>
+				</template>
 			</defs>
 		</svg>
-        <Navigation/>
-		<h1>关于<span class="text-gradient">我</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+
+		<h1 class="text-gradient">历史与科技的交汇</h1>
+		<ul>
+			<li><a href="/md/科技对历史">科技对历史的影响</a></li>
+			<li><a href="/md/历史对科技">历史对科技的影响</a></li>
+		</ul>
+		<p>
+			历史与科技的交汇带来了深远的意义，这种交汇不仅推动了人类社会的进步，还改变了我们的生活方式、思维方式以及对世界的认知。
 		</p>
 
+		<h2>
+			<li>
+				<a
+					href="https://www.gov.cn/yaowen/liebiao/202405/content_6954761.htm"
+					>推动社会的发展和变革→</a>
+			</li>
+		</h2>
+
+		<p>
+			科技作为历史的驱动力之一，不断地创新和发展，为人类社会带来了前所未有的机遇和挑战。
+		</p>
+
+		<h2>
+			<li>
+				<a href="https://theory.gmw.cn/2021-12/15/content_35382565.htm"
+					>促进人类文明的进步→</a>
+			</li>
+		</h2>
+
+		<p>
+			科技的不断进步为人类创造了更加便捷、舒适的生活环境，提高了人们的生活质量。
+		</p>
 	</main>
 </Layout>
 
@@ -69,9 +104,24 @@ import Navigation from '../components/Nav.astro';
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+		font-family: 楷体;
 	}
+	h2,
+	h3 {
+		color: #333;
+		font-family: 宋体；;
+	}
+	p {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: black;
+	}
+
 	.text-gradient {
-		background-image: var(--accent-gradient);
+		background-image: linear-gradient(
+			rgba(243, 194, 21, 0.99),
+			rgba(223, 223, 42, 0.66)
+		);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
@@ -79,26 +129,43 @@ import Navigation from '../components/Nav.astro';
 	}
 	.instructions {
 		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
+		border: 1px solid rgba(243, 238, 238, 0.25);
+		background: linear-gradient(
+			rgba(234, 193, 48, 0.66),
+			rgba(250, 245, 102, 0.33)
+		);
+		color: black;
+		padding: 2rem;
 		border-radius: 8px;
 	}
 	.instructions code {
-		font-size: 0.8em;
+		font-size: 1em;
 		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
+		background: linear-gradient(
+			rgba(247, 245, 237, 0.66),
+			rgba(244, 243, 193, 0.33)
+		);
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
 	}
 	.instructions strong {
-		color: rgb(var(--accent-light));
+		color: #f0aa27;
 	}
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
+		gap: 1rem;
 		padding: 0;
+	}
+	code {
+		color: #f0aa27;
+	}
+	.banner img {
+		max-width: 100%;
+		height: auto;
+	}
+	a {
+		text-decoration: none;
+		color:rgb(202, 176, 10);
 	}
 </style>
